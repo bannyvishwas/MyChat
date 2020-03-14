@@ -1,0 +1,326 @@
+body
+{
+	margin:0px 0px;
+	background-image:url("../Images/bg.png");
+}
+#myheader,#myfooter
+{
+	min-width:1000px;
+	height:5%;
+	width:100%;
+	background:rgba(127,127,127,1);
+	float:left;
+	text-align:center;
+	font-family:Arial;
+	font-size:24px;
+	font-weight:bold;
+}
+#logincontainer
+{
+	min-width:1000px;
+	height:90%;
+	width:100%;
+	background-image:url("Images/back.png");
+	//background:green;
+	float:left;
+}
+.sidewin
+{
+	width:20%;
+	height:100%;
+	//background:red;
+	float:left;
+	//border:1px solid;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	
+}
+.sidewin::-webkit-scrollbar,#messcont::-webkit-scrollbar
+{
+	width:5px;
+}
+.sidewin::-webkit-scrollbar-thumb,#messcont::-webkit-scrollbar-thumb
+{
+	border-radius:10px;
+	background:#7F7F7F;
+	-webkit-box-shadow:inset 0 0 6px #7F7F7F;
+}
+
+.middlewin
+{
+	width:59.6%;
+	height:100%;
+	float:left;
+	//background:green;
+	border-left:2px solid;
+	border-right:2px solid;
+}
+.dp
+{
+	height:40%;
+	width:90%;
+	margin:5% 5%;
+	border:2px solid;
+	border-radius:50%;
+	margin-bottom:30%;
+}
+button
+{
+	height:5%;
+	width:80%;
+	border:2px solid;
+	margin:5% 10%;
+	cursor:hand;
+	outline:none;
+}
+button:hover,input[type="submit"]:hover
+{
+	background:#7F7F7F;
+	color:white;
+	transition-duration:1s;
+}
+.usrcontrol
+{
+	height:18%;
+	width:100%;
+	float:left;
+	background:white;
+	margin-bottom:2%;
+	border-bottom:2px solid black;
+	border-top:2px solid black;
+	position:relative;
+}
+
+.usrcontrol .dp
+{
+	width:25%;
+	height:70%;
+	float:left;
+}
+.usrcontrol button
+{
+
+	height:20%;
+	width:25%;
+	margin:10% 1%;
+}
+.usrcontrol label
+{
+	float:left;
+	padding-top:8%;
+	//border:1px solid;
+	width:60%;
+}
+.srch
+{
+	width:96%;
+	height:5%;
+	border-bottom:2px solid;
+	float:left;
+	padding:2% 2%;
+	//background-color:red;
+}
+input
+{
+	height:100%;
+	width:100%;
+	border-radius:10px;
+	border:1px solid;
+	outline:none;
+	padding-left:2%;
+	padding-right:2%;
+}
+input:focus
+{
+	background:#DAF28E;
+}
+#chatcont
+{
+	height:86%;
+	width:96%;
+	margin:2% 2%;
+	float:left;
+	border:2px solid black;
+}
+#activechat,#inpcont
+{
+	height:10%;
+	width:100%;
+	background:#7F7F7F;
+	border-bottom:2px solid #CDD7E5;
+}
+#activechat .dp
+{
+	width:5%;
+	height:60%;
+	float:left;
+	margin:1% 1%;
+}
+#activechat label
+{
+	float:left;
+	margin:2% 2%;
+	color:white;
+	font-weight:bold;
+}
+#messcont
+{
+	width:100%;
+	height:80%;
+	border-bottom:2px solid #CDD7E5;
+	overflow-y:scroll;
+}
+#inpcont button
+{
+	height:70%;
+	width:15%;
+	float:right;
+	margin:1% 1%;
+}
+textarea
+{
+	width:80%;
+	height:70%;
+	margin:1% 1%;
+	resize:none;
+	float:left;
+}
+.messBox
+{
+	height:auto;
+	width:60%;
+	padding:1% 1%;
+	border-radius:10px;
+	border:1px solid;
+}
+.messR
+{
+	background:white;
+	float:left;
+}
+.messS
+{
+	background:#F4FCBE;
+	float:right;
+}
+#messcont label
+{
+	float:left;
+	width:95%;
+	//border:1px solid;
+	margin-bottom:2%;
+	padding-left:2%;
+	padding-right:2%;
+}
+.labelR
+{
+	text-align:left;
+}
+.labelS
+{
+	text-align:right;
+}
+.messtext
+{
+	padding-left:2%;
+	padding-right:2%;
+}
+.usrstatus
+{
+	height:20px;
+	width:20px;
+	position:absolute;
+	background:#B5E61D;
+	top:70%;
+	left:20%;
+	border-radius:50%;
+}
+/*New Codes*/
+
+#backbox
+{
+	position:absolute;
+	height:100%;
+	width:100%;
+	background:rgba(120,120,120,.7);
+	display:none;
+}
+#setting,#messB,#dpbox
+{
+	height:60%;
+	width:50%;
+	border:2px solid #EEEEEE;
+	background:#C8E07C;
+	margin:8% 25%;
+	display:none;
+}
+.hdr
+{
+	font-size:24px;
+	color:white;
+	text-align:center;
+	width:100%;
+	background:#1D1D1D;
+	float:left;
+}
+#setting table,#savebtn
+{
+	height:50%;
+	width:80%;
+	margin-left:10%;
+	font-size:18px;
+}
+#setting td
+{
+	padding:2% 5%;
+}
+#savebtn
+{
+	height:30%;
+	//background:yellow;
+	text-align:center;
+}
+#savebtn button,#messB button
+{
+
+	height:20%;
+	width:25%;
+}
+#messB,#dpbox
+{
+	height:20%;
+	text-align:center;
+}
+#messB button
+{
+	margin:auto;
+	margin-top:5%;
+}
+input[type="file"]
+{
+	border-radius:0;
+	cursor:hand;
+	height:auto;
+	width:auto;
+	border:none;
+	display:block;
+	margin:5% auto;
+}
+input[type="submit"],#dpbox button
+{
+	height:20%;
+	width:25%;
+	border:2px solid black;
+	margin:0% 10%;
+	border-radius:0;
+	float:left;
+	cursor:hand;
+}
+#peoplelistcont .usrcontrol
+{
+	height:25%;
+}
+#peoplelistcont label
+{
+	padding-top:3%;
+}
